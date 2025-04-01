@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>Producto</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="../assets/css/style.css">
@@ -41,115 +41,70 @@
         </nav>
     </header>
     <main>
-        <div class="P-card container"
-            style="display:flex; flex-direction: row; margin: 0 auto; padding: 5px; border-radius: 10px; background-color: whitesmoke;">
-            <div id="carouselExampleIndicators" class="carousel slide col-8-sm" data-bs-ride="carousel"
-                style="width: 50rem; height: auto; padding: 20px;">
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
-                        class="active" aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                        aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-                        aria-label="Slide 3"></button>
-                </div>
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="../assets/img/miniaturas/Hodie-gris-perla.jpg" class="d-block w-100" alt="..."
-                            style="border-radius: 10px;">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="../assets/img/miniaturas/Hoodie-navy.jpg" class="d-block w-100" alt="..."
-                            style="border-radius: 10px;">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="../assets/img/miniaturas/Hoodie-wine.jpg" class="d-block w-100" alt="..."
-                            style="border-radius: 10px;">
+        <div class="container">
+            <div class="row ">
+                <!-- Imagen del producto -->
+                <div class="col-lg-8">
+                    <div class="P-card">
+                        <img src="../assets/img/miniaturas/Hoodie-navy.jpg" width="100%" alt="carrusel">
                     </div>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-                    data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-                    data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
-            </div>
-            <div class="info.product col-3-sm">
-                <h2>Hoodie OG Wine</h2>
-                <p class="Precio">$61.990</p>
-                <div class="Button-interact">
-                    <button>+</button>
-                    <p>0</p>
-                    <button>-</button>
+                <!-- Detalles del producto -->
+                <div class="col-lg-4">
+                    <div>
+                        <div>
+                            <h1>Nombre de producto</h1>
+                        </div>
+                        <div class="display_boton">
+                            <a class="boton"> S/M</a>
+                            <a class="boton"> L/XL </a>
+                            <a class="boton"> XXL </a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
+        <!--Descripcion de producto ##### NO BORRAR (inicio) #####-->
+        <div class="D-card"
+            style="display:flex; flex-direction: column; border-radius: 10px; background-color: aliceblue; margin: 30px ; padding: 10px;">
+            <h2>Descripcion del producto</h2>
+            <p class="descripcion" style="text-wrap: wrap;">
+                Materiales Premium, sobrecosturas expuestas.
+                Polcotton con carda (80% Algodón y 20% Poliester)
+                12 Paeles de confección en costuras reforzadas. 700 gramos de peso. Bolsillos frontales y 2
+                bolsillos
+                interiores nuevos, Mangas anchas de hasta 28 CM con ajustes en la muñeca para generear
+                caída.
+                Capucha oversize sin costuras. Fit Oversize Boxy.
+            </p>
+            <strong>Cada detalle diseñado para destacar.</strong>
+            <p><strong>
+                    Medidas: <br>
+                    <ul>
+                        <li>S/M | Alto: 64cm Ancho: 61cm <br></li>
+                        <li>L/XL | Alto: 66cm Ancho: 63cm <br></li>
+                        <li>XXL | Alto: 69cm Ancho: 66cm</li>
+                    </ul>
+                </strong>
+            </p>
         </div>
-        <!--No olvidar sacar-->
-    </main>
-
-    <!---Aqui va todo lo relacionado al producto-->
-    <section>
-        <div class="info.product">
-            <h2>Hoodie OG Wine</h2>
-            <p class="Precio">$61.990</p>
-        </div>
-        <!--Boton de compra y agregar a carro-->
-        <div class="Button.interact">
-            <div>
-                <button>-</button>
-                <p class="product.counter">1</p>
-                <button>+</button>
-            </div>
-            <div>
-                <button>Agregar al Carrito</button>
-                <button>Pagar ahora</button>
-            </div>
-            <!--Aqui va la descripcion del producto-->
-        </div>
-        <h2>descripcion del producto</h2>
-        <p class="descripcion">
-            Materiales Premium, sobrecosturas expuestas. <br>
-            Polcotton con carda (80% Algodón y 20% Poliester) <br>
-            12 Paeles de confección en costuras reforzadas. 700 gramos de peso. Bolsillos frontales y 2
-            bolsillos
-            interiores nuevos, Mangas anchas de hasta 28 CM con ajustes en la muñeca para generear caída. <br>
-            Capucha oversize sin costuras. Fit Oversize Boxy. <br>
-        </p>
-        <strong>Cada detalle diseñado para destacar.</strong>
-        <p><strong>
-                Medidas: <br>
-                <ul>
-                    <li>S/M | Alto: 64cm Ancho: 61cm <br></li>
-                    <li>L/XL | Alto: 66cm Ancho: 63cm <br></li>
-                    <li>XXL | Alto: 69cm Ancho: 66cm</li>
-                </ul>
-            </strong>
-        </p>
-        <div>
-        </div>
-    </section>
+        <!--Descripcion de producto ##### NO BORRAR (fin) #####-->
     </main>
     <!---Aqui empieza el footer-->
     <footer>
-        <img src="/allwaves/assets/img/Footer.jpg" alt="imgfooter" width="50%">
+        <img src="../assets/img/Footer.jpg" alt="imgfooter" width="50%">
         <p>Proyecto de moda enfocado al Streetwear</p>
-        <h5>En constante evolucion desde el año 2010 en Satiago, Chile</h5>
-        <button>
-            <a href="https://www.youtube.com/@AllWavesWorld">AllWavesYT</a>
-        </button>
-        <button>
-            <a href="https://www.tiktok.com/@allwavesworldcl">AllWavesTikTok</a>
-        </button>
-        <button>
-            <a href="https://www.instagram.com/allwavesworldcl/">AllWavesIG</a>
-        </button>
+        <h5>En constante evolucion desde el año 2010 en Santiago, Chile</h5>
+        <div class="linkfoot">
+            <a class="linkbtn" href="https://www.youtube.com/@AllWavesWorld">AllWavesYT</a>
+            <a class="linkbtn" href="https://www.tiktok.com/@allwavesworldcl">AllWavesTikTok</a>
+            <a class="linkbtn" href="https://www.instagram.com/allwavesworldcl/">AllWavesIG</a>
+        </div>
     </footer>
+    <!--carga de scripts-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+    <!--Fin de la pagina-->
+
 </body>

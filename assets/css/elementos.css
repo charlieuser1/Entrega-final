@@ -1,0 +1,17 @@
+/*Card de prductoo*/
+.container .row {
+  margin: 10px;
+}
+.container .row .col-lg-8:first-of-type {
+  border-radius: 10px;
+  border-style: solid;
+  background-color: #FFD700;
+  padding: 5%;
+}
+.container .row .col-lg-4:nth-of-type(2) {
+  border-radius: 10px;
+  border-style: solid;
+  background-color: #ADD8E6;
+}
+
+/*# sourceMappingURL=elementos.css.map */
