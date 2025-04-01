@@ -1,0 +1,22 @@
+/*Card de prductoo*/
+
+.container {
+    .row {
+        margin: 10px;
+        .col-lg-8 {
+            &:first-of-type {
+                border-radius: 10px;
+                border-style:solid;
+                background-color: #FFD700; // Dorado para la primera columna (imagen)
+                padding: 5%;
+            }
+        }
+        .col-lg-4{
+            &:nth-of-type(2) {
+                border-radius: 10px;
+                border-style:solid;
+                background-color: #ADD8E6; // Azul claro para la segunda columna (detalles)
+            }
+        }
+    }
+} 

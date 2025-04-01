@@ -1,4 +1,6 @@
 /*Aqui empieza la configuracion general de la web*/
+@import url(elementos.css);
+
 body {
     background: linear-gradient(to right, #550202ef, #db1515, #550202ef);
     font-family: "Poppins", serif;
@@ -323,4 +325,8 @@ footer img {
         grid-template-columns: auto;
     }
 
+    .card{
+    display: flex;
+    flex-direction: column;
+}
 }
