@@ -2,16 +2,70 @@
 .container .row {
   margin: 10px;
 }
-.container .row .col-lg-8:first-of-type {
+.container .row .col-lg-12 .carousel-inner {
   border-radius: 10px;
-  border-style: solid;
-  background-color: #FFD700;
-  padding: 5%;
 }
-.container .row .col-lg-4:nth-of-type(2) {
+.container .row .col-lg-12:first-of-type {
   border-radius: 10px;
+  background-color: aliceblue;
+  padding: 5px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.display_boton {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  padding: 10px;
+}
+
+button {
+  padding: 5px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: rgb(14, 13, 13);
+  border-radius: 30px;
   border-style: solid;
-  background-color: #ADD8E6;
+  border-color: rgb(127, 128, 129);
+  border-width: 2px;
+  color: rgb(255, 255, 255);
+}
+
+.selected {
+  border-color: rgb(195, 195, 218);
+  background-color: rgb(98, 98, 99);
+  color: white;
+}
+
+.CTA {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 10px;
+}
+.CTA .boton1 {
+  border-radius: 10px;
+  border: none;
+  font-weight: bold;
+  background-color: rgb(1, 1, 182);
+}
+.CTA .boton1:active {
+  background-color: rgb(0, 0, 129);
+}
+.CTA .boton2 {
+  border-radius: 10px;
+  border: none;
+  font-weight: 700;
+  background-color: rgb(1, 139, 1);
+}
+.CTA .boton2:active {
+  background-color: rgb(0, 87, 0);
+}
+
+.P_name {
+  font-weight: bold;
 }
 
 /*# sourceMappingURL=elementos.css.map */
