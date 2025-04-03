@@ -4,6 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="../assets/css/style.css">
     <title>Carrito</title>
 </head>
@@ -14,100 +16,119 @@
     rel="stylesheet">
 
 <body>
-    <header class="top-bar">
-        <div class="container">
-            <div class="logo">
-                <img src="../assets/img/Isotipo - copia.png" width="40px" alt="Allwaves.com" href="index.html">
-            </div>
-            <nav class="navigation">
-                <!--Esta es la barra de naveagacio-->
-                <div>
-                    <a href="../index.html"><svg width="20px" xmlns="http://www.w3.org/2000/svg" fill="none"
-                            viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
-                        </svg>Ir al Inicio</a>
-                    <a href="./catalogo.html"><svg width="20px" xmlns="http://www.w3.org/2000/svg" fill="none"
-                            viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                d="M8.25 6.75h12M8.25 12h12m-12 5.25h12M3.75 6.75h.007v.008H3.75V6.75Zm.375 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0ZM3.75 12h.007v.008H3.75V12Zm.375 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm-.375 5.25h.007v.008H3.75v-.008Zm.375 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z" />
-                        </svg>Ir al Catalogo</a>
-                    <a href="./carrito.html"><svg width="20px" xmlns="http://www.w3.org/2000/svg" fill="none"
-                            viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
-                        </svg>Ir a Mi carrito de compras</a>
+    <header>
+        <!--Aqui esta la Navbar-->
+        <nav class="navbar navbar-expand-lg" style="background: black;">
+            <div class="container-fluid">
+                <a class="navbar-brand text-white" href="../index.html"><img src="../assets/img/Isotipo - copia.png"
+                        alt="logo" width="50px"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link" aria-current="page" href="../index.html">
+                            Ir a Inicio
+                        </a>
+                        <a class="nav-link" href="./catalogo.html">Ir a Catalogo</a>
+                        <a class="nav-link" href="./carrito.html">Ir al Carrito</a>
+                    </div>
                 </div>
-            </nav>
-        </div>
+            </div>
+        </nav>
     </header>
     <main>
-        <section class="cart">
-            <div class="product.cart">
-                <img src="../assets/img/03 Hoodie Gris Perla.jpg" width="15%" alt="">
-                <h4>Hoodie gris perla</h4>
-                <p class="Precio">$61.990</p>
-                <h3>Cantidad:</h3>
-                <button>+</button>
-                <p class="counter">1</p>
-                <button>-</button>
-                <div><button class="delete">Quitar del carrito
-                        <svg width="15px" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                            stroke-width="2" stroke="currentColor" class="size-6">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                d="m14.74 9-.346 9m-4.788 0L9.26 9m9.968-3.21c.342.052.682.107 1.022.166m-1.022-.165L18.16 19.673a2.25 2.25 0 0 1-2.244 2.077H8.084a2.25 2.25 0 0 1-2.244-2.077L4.772 5.79m14.456 0a48.108 48.108 0 0 0-3.478-.397m-12 .562c.34-.059.68-.114 1.022-.165m0 0a48.11 48.11 0 0 1 3.478-.397m7.5 0v-.916c0-1.18-.91-2.164-2.09-2.201a51.964 51.964 0 0 0-3.32 0c-1.18.037-2.09 1.022-2.09 2.201v.916m7.5 0a48.667 48.667 0 0 0-7.5 0" />
-                        </svg></button></div>
+        <div class="container">
+            <div class="row">
+                <div class="c-card">
+                    <div>
+                        <img src="../assets/img/miniaturas/Hodie-gris-perla.jpg" alt="poleron">
+                    </div>
+                    <div>
+                        <h5>Poleron Hoodie OG</h5>
+                        <p>Talla:S/M</p>
+                        <p class="Precio">$61.990</p>
+                    </div>
+                    <div class="display-c">
+                        <h4>Quitar producto</h4>
+                        <a href=""><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                stroke-width="1.5" stroke="currentColor" class="size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="m14.74 9-.346 9m-4.788 0L9.26 9m9.968-3.21c.342.052.682.107 1.022.166m-1.022-.165L18.16 19.673a2.25 2.25 0 0 1-2.244 2.077H8.084a2.25 2.25 0 0 1-2.244-2.077L4.772 5.79m14.456 0a48.108 48.108 0 0 0-3.478-.397m-12 .562c.34-.059.68-.114 1.022-.165m0 0a48.11 48.11 0 0 1 3.478-.397m7.5 0v-.916c0-1.18-.91-2.164-2.09-2.201a51.964 51.964 0 0 0-3.32 0c-1.18.037-2.09 1.022-2.09 2.201v.916m7.5 0a48.667 48.667 0 0 0-7.5 0" />
+                            </svg></a>
+                    </div>
+                </div>
             </div>
-            <div class="product.cart">
-                <img src="../assets/img/02 Hoodie navy.jpg" width="15%" alt="">
-                <h4>Hoodie gris perla</h4>
-                <p class="Precio">$61.990</p>
-                <h3>Cantidad:</h3>
-                <button>+</button>
-                <p class="counter">1</p>
-                <button>-</button>
-                <div><button class="delete">Quitar del carrito
-                        <svg width="15px" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                            stroke-width="2" stroke="currentColor" class="size-6">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                d="m14.74 9-.346 9m-4.788 0L9.26 9m9.968-3.21c.342.052.682.107 1.022.166m-1.022-.165L18.16 19.673a2.25 2.25 0 0 1-2.244 2.077H8.084a2.25 2.25 0 0 1-2.244-2.077L4.772 5.79m14.456 0a48.108 48.108 0 0 0-3.478-.397m-12 .562c.34-.059.68-.114 1.022-.165m0 0a48.11 48.11 0 0 1 3.478-.397m7.5 0v-.916c0-1.18-.91-2.164-2.09-2.201a51.964 51.964 0 0 0-3.32 0c-1.18.037-2.09 1.022-2.09 2.201v.916m7.5 0a48.667 48.667 0 0 0-7.5 0" />
-                        </svg></button></div>
+            <div class="row">
+                <div class="c-card">
+                    <div>
+                        <img src="../assets/img/miniaturas/Hodie-gris-perla.jpg" alt="poleron">
+                    </div>
+                    <div>
+                        <h5>Poleron Hoodie OG</h5>
+                        <p>Talla:S/M</p>
+                        <p class="Precio">$61.990</p>
+                    </div>
+                    <div class="display-c">
+                        <h4>Quitar producto</h4>
+                        <a href=""><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                stroke-width="1.5" stroke="currentColor" class="size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="m14.74 9-.346 9m-4.788 0L9.26 9m9.968-3.21c.342.052.682.107 1.022.166m-1.022-.165L18.16 19.673a2.25 2.25 0 0 1-2.244 2.077H8.084a2.25 2.25 0 0 1-2.244-2.077L4.772 5.79m14.456 0a48.108 48.108 0 0 0-3.478-.397m-12 .562c.34-.059.68-.114 1.022-.165m0 0a48.11 48.11 0 0 1 3.478-.397m7.5 0v-.916c0-1.18-.91-2.164-2.09-2.201a51.964 51.964 0 0 0-3.32 0c-1.18.037-2.09 1.022-2.09 2.201v.916m7.5 0a48.667 48.667 0 0 0-7.5 0" />
+                            </svg></a>
+                    </div>
+                </div>
             </div>
-            <div class="product.cart">
-                <img src="../assets/img/03 Jorts double knees gris.jpg" width="15%" alt="">
-                <h4>Hoodie gris perla</h4>
-                <p class="Precio">$61.990</p>
-                <h3>Cantidad:</h3>
-                <button>+</button>
-                <p class="counter">1</p>
-                <button>-</button>
-                <div><button class="delete">Quitar del carrito
-                        <svg width="15px" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                            stroke-width="2" stroke="currentColor" class="size-6">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                d="m14.74 9-.346 9m-4.788 0L9.26 9m9.968-3.21c.342.052.682.107 1.022.166m-1.022-.165L18.16 19.673a2.25 2.25 0 0 1-2.244 2.077H8.084a2.25 2.25 0 0 1-2.244-2.077L4.772 5.79m14.456 0a48.108 48.108 0 0 0-3.478-.397m-12 .562c.34-.059.68-.114 1.022-.165m0 0a48.11 48.11 0 0 1 3.478-.397m7.5 0v-.916c0-1.18-.91-2.164-2.09-2.201a51.964 51.964 0 0 0-3.32 0c-1.18.037-2.09 1.022-2.09 2.201v.916m7.5 0a48.667 48.667 0 0 0-7.5 0" />
-                        </svg></button></div>
-                <h2>Total:<p class="Precio.total"></p>185.970</h2>
+            <div class="row">
+                <div class="c-card">
+                    <div>
+                        <img src="../assets/img/miniaturas/Hodie-gris-perla.jpg" alt="poleron">
+                    </div>
+                    <div>
+                        <h5>Poleron Hoodie OG</h5>
+                        <p>Talla:S/M</p>
+                        <p class="Precio">$61.990</p>
+                    </div>
+                    <div class="display-c">
+                        <h4>Quitar producto</h4>
+                        <a href=""><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                stroke-width="1.5" stroke="currentColor" class="size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="m14.74 9-.346 9m-4.788 0L9.26 9m9.968-3.21c.342.052.682.107 1.022.166m-1.022-.165L18.16 19.673a2.25 2.25 0 0 1-2.244 2.077H8.084a2.25 2.25 0 0 1-2.244-2.077L4.772 5.79m14.456 0a48.108 48.108 0 0 0-3.478-.397m-12 .562c.34-.059.68-.114 1.022-.165m0 0a48.11 48.11 0 0 1 3.478-.397m7.5 0v-.916c0-1.18-.91-2.164-2.09-2.201a51.964 51.964 0 0 0-3.32 0c-1.18.037-2.09 1.022-2.09 2.201v.916m7.5 0a48.667 48.667 0 0 0-7.5 0" />
+                            </svg></a>
+                    </div>
+                </div>
             </div>
-        </section>
-        <button class="button.pago">
-            <a href="./pago.html">Ir a pagar</a>
-        </button>
-        <p>Impuestos, descuentos y envío calculados en la pantalla de pago.</p>
+        </div>
+        <div class="container-fluid">
+            <div class="Total">
+                <div class="Box-calculator">
+                    <div>
+                        <a class="btnPago" href="../pages/pago.html">Ir a Pagar</a>
+                    </div>
+                    <div class="Totalp">
+                        <div>
+                            <p>Total<p class="Precio">$185.970</p></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
     </main>
     <footer>
-        <br>
         <img src="../assets/img/Footer.jpg" alt="imgfooter" width="50%">
         <p>Proyecto de moda enfocado al Streetwear</p>
-        <h5>En constante evolucion desde el año 2010 en Satiago, Chile</h5>
-        <button>
-            <a href="https://www.youtube.com/@AllWavesWorld">AllWavesYT</a>
-        </button>
-        <button>
-            <a href="https://www.tiktok.com/@allwavesworldcl">AllWavesTikTok</a>
-        </button>
-        <button>
-            <a href="https://www.instagram.com/allwavesworldcl/">AllWavesIG</a>
-        </button>
+        <h5>En constante evolucion desde el año 2010 en Santiago, Chile</h5>
+        <div class="linkfoot">
+            <a class="linkbtn" href="https://www.youtube.com/@AllWavesWorld">AllWavesYT</a>
+            <a class="linkbtn" href="https://www.tiktok.com/@allwavesworldcl">AllWavesTikTok</a>
+            <a class="linkbtn" href="https://www.instagram.com/allwavesworldcl/">AllWavesIG</a>
+        </div>
     </footer>
+    <!--carga de scripts-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <!--Fin de la pagina-->
 </body>

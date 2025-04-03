@@ -3,27 +3,34 @@
 .container {
     .row {
         margin: 10px;
+        border-radius: 10px;
+
         .col-lg-12 {
-            .carousel-inner{
+            .carousel-inner {
                 border-radius: 10px;
             }
+
             &:first-of-type {
                 border-radius: 10px;
                 background-color: aliceblue; //la primera columna (imagen)
                 padding: 5px;
                 display: flex;
-                flex-direction:row;
+                flex-direction: row;
                 gap: 10px;
             }
+
         }
+
     }
-} 
-.display_boton{
+}
+
+.display_boton {
     display: flex;
     justify-content: center;
     gap: 5px;
     padding: 10px;
 }
+
 button {
     padding: 5px 20px;
     font-size: 16px;
@@ -42,29 +49,115 @@ button {
     color: white;
 }
 
-.CTA{
+.CTA {
     display: flex;
     flex-direction: column;
     gap: 10px;
     margin: 10px;
-    .boton1{
+
+    .boton1 {
         border-radius: 10px;
         border: none;
         font-weight: bold;
         background-color: rgb(1, 1, 182);
     }
-    .boton1:active{
+
+    .boton1:active {
         background-color: rgb(0, 0, 129);
     }
-    .boton2{
+
+    .boton2 {
         border-radius: 10px;
         border: none;
-        font-weight:700;
+        font-weight: 700;
         background-color: rgb(1, 139, 1);
     }
-    .boton2:active{
+
+    .boton2:active {
         background-color: rgb(0, 87, 0);
     }
 }
-.P_name{
-font-weight: bold;}
+
+.P_name {
+    font-weight: bold;
+}
+
+main {
+    .container {
+        .row {
+            padding: 10px;
+            background-color: aliceblue;
+
+            .c-card {
+                /*para media query
+                display: flex;
+                flex-direction: column;*/
+                display: grid;
+                grid-template-columns: auto auto auto;
+                column-gap: 10%;
+
+                h5 {
+                    font-weight: bold;
+                }
+
+                p {
+                    font-weight: 500;
+                }
+
+                .display-c {
+                    h4 {
+                        font-size: 16px;
+                        font-weight: bold;
+                    }
+                }
+
+                a {
+                    background-color: rgb(14, 13, 13);
+                    border-radius: 10px;
+                    border: 2px solid gray;
+                    padding: 5px 10px;
+
+                    svg {
+                        color: rgb(255, 255, 255);
+                        width: 20px;
+                    }
+                }
+
+                img {
+                    border-radius: 10px;
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+.container-fluid {
+    .Total {
+        padding: auto;
+        background-color: aliceblue;
+        border-radius: 10px;
+        padding: 10px;
+        .Box-calculator {
+            display: flex;
+            flex-direction: row-reverse;
+            column-gap: 25%;
+            margin: 8px;
+            padding: 10px;
+        }
+        .btnPago {
+            border-radius: 10px;
+            border: none;
+            font-weight: 600;
+            text-decoration: none;
+            color: rgb(0, 0, 0);
+            padding: 8px 16px;
+            background-color: rgb(0, 184, 0);
+            border: solid rgba(199, 199, 199, 0.664) 2px;
+        }
+        .btnPago:hover{
+            background-color: rgb(3, 218, 3);
+        }
+
+    }
+}

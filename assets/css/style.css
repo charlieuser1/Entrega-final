@@ -325,8 +325,9 @@ footer img {
         grid-template-columns: auto;
     }
 
-    .card{
-    display: flex;
-    flex-direction: column;
-}
+    .card {
+        display: flex;
+        flex-direction: column;
+    }
+
 }
