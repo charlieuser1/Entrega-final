@@ -1,0 +1,105 @@
+/*Aqui empieza la confiuguracion exclusiva del catalogo*/
+
+.selector-cont {
+    margin: 0 auto;
+    padding: 10px 8px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 10px;
+    color: black;
+    border-style: ridge;
+    border-color: aliceblue;
+    box-shadow: #a3a2a2 5px 5px 5px;
+}
+
+.catalogo-page {
+    background: linear-gradient(to right, #550202ef, #db1515, #550202ef);
+    padding: 20px 30px;
+    background-color: #d3d3d3;
+    color: rgb(255, 255, 255);
+    margin: 0 auto;
+}
+
+.barra-search {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.barra-search h1 {
+    color: aliceblue;
+    text-decoration: underline;
+    font-size: 25px;
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+.barra-search div {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.barra-search div input {
+    border-radius: 5px;
+    gap: 20px;
+    border-color: #797070;
+}
+
+/***aqui empiezan las cards de los productos***/
+
+.grid {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: auto auto auto auto;
+}
+
+.card {
+    width: 250px;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    margin: 20px;
+    flex-grow: 1;
+}
+
+.card img {
+    border-radius: 8px;
+    margin: 5px;
+}
+
+.descripcion {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    flex-grow: 1;
+}
+
+.descripcion h5 {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.button {
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 8px 16px;
+    margin-top: auto;
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.39) 2px 2px;
+    align-self: center;
+}
+
+.button:hover {
+    background-color: rgb(70, 69, 69);
+}
+
+.Precio {
+    font-weight: bold;
+    color: blue;
+}
