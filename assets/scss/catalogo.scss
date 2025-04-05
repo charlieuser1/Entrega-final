@@ -109,15 +109,3 @@
     font-weight: bold;
     color: blue;
 }
-
-@mixin tablet {
-    @media screen and (max-width: 835px) {
-        @content;
-    }
-}
-
-@mixin mobile {
-    @media screen and (max-width: 480px) {
-        @content;
-    }
-}
