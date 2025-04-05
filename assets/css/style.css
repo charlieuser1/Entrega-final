@@ -1,47 +1,5 @@
-@charset "UTF-8";
-@media (max-width: 1200px) {
-  .grid {
-    display: grid;
-    justify-content: center;
-    grid-template-columns: auto auto auto;
-  }
-}
-@media (max-width: 835px) {
-  .grid {
-    grid-template-columns: auto auto;
-  }
-}
-@media (max-width: 480px) {
-  .fondoytexto {
-    align-items: center;
-    background-color: rgba(0, 0, 0, 0.582);
-    color: aliceblue;
-    margin: 0 auto;
-    padding: 0;
-    border-radius: 20px;
-    text-align: center;
-  }
-  .linkfoot {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-  }
-  .presentacion {
-    padding: 10px;
-  }
-  .barra-search {
-    flex-direction: column;
-  }
-  .grid {
-    display: grid;
-    justify-content: center;
-    grid-template-columns: auto;
-  }
-  .card {
-    display: flex;
-    flex-direction: column;
-  }
-}
+/*Aqui empieza la confiuguracion exclusiva del catalogo*/
+@import url(./mediaqueries.scss);
 .presentacion {
   display: flex;
   flex-direction: column;
@@ -55,34 +13,11 @@
   margin: 0px 0px 10px 0px;
   font-size: 20px;
 }
-
-.ir-catalogo {
-  display: inline-block;
-  padding: 10px 100px;
-  border: 2px ridge #d3d3d3;
-  /* Borde de 2px de color negro */
-  background-color: rgba(50, 62, 230, 0.3647058824);
-  /* Fondo transparente */
-  color: #ffffff;
-  /* Color del texto */
-  text-decoration: none;
-  /* Sin subrayado en el texto */
-  font-size: 16px;
-  /* Tamaño del texto */
-  font-weight: 500;
-  border-radius: 5px;
-  /* Bordes redondeados */
+.presentacion h2 {
+  font-size: 50px;
+  font-weight: bolder;
 }
-
-.ir-catalogo:hover {
-  background-color: rgba(50, 62, 230, 0.3647058824);
-  /* Fondo negro al pasar el cursor */
-  color: #fff;
-  /* Texto blanco al pasar el cursor */
-  border: 2px dotted rgba(202, 202, 202, 0.6862745098);
-}
-
-.fondoytexto {
+.presentacion .fondoytexto {
   align-items: center;
   background-color: rgba(0, 0, 0, 0.582);
   color: aliceblue;
@@ -93,9 +28,22 @@
   gap: 30px;
 }
 
-.presentacion h2 {
-  font-size: 50px;
-  font-weight: bolder;
+.ir-catalogo {
+  display: inline-block;
+  padding: 10px 100px;
+  border: 2px ridge #d3d3d3;
+  background-color: rgba(50, 62, 230, 0.3647058824);
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 5px;
+}
+
+.ir-catalogo:hover {
+  background-color: rgba(50, 62, 230, 0.3647058824);
+  color: #fff;
+  border: 2px dotted rgba(202, 202, 202, 0.6862745098);
 }
 
 .vista-previa {
@@ -107,8 +55,7 @@
   margin-top: 50px;
   padding: 0 auto;
 }
-
-.catalogo-home {
+.vista-previa .catalogo-home {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -164,6 +111,21 @@ button {
   gap: 10px;
   margin: 10px;
 }
+.CTA .compra {
+  border-radius: 10px;
+  border: none;
+  font-weight: 600;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  padding: 8px 16px;
+  background-color: rgb(0, 184, 0);
+  border: solid rgba(199, 199, 199, 0.664) 2px;
+}
+.CTA .compra a {
+  color: aliceblue;
+  text-decoration: none;
+  align-self: center;
+}
 .CTA .boton1 {
   border-radius: 10px;
   border: none;
@@ -172,12 +134,6 @@ button {
 }
 .CTA .boton1:active {
   background-color: rgb(0, 0, 129);
-}
-.CTA .boton2 {
-  border-radius: 10px;
-  border: none;
-  font-weight: 700;
-  background-color: rgb(1, 139, 1);
 }
 .CTA .boton2:active {
   background-color: rgb(0, 87, 0);
@@ -318,7 +274,6 @@ footer img {
   border-color: rgb(241, 255, 255);
 }
 
-/*Aqui empieza la confiuguracion exclusiva del catalogo*/
 .selector-cont {
   margin: 0 auto;
   padding: 10px 8px;
@@ -420,6 +375,53 @@ footer img {
 .Precio {
   font-weight: bold;
   color: blue;
+}
+
+@media (max-width: 1200px) {
+  .grid {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: auto auto auto;
+  }
+}
+@media (max-width: 835px) {
+  .grid {
+    grid-template-columns: auto auto;
+  }
+}
+@media (max-width: 480px) {
+  .fondoytexto {
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.582);
+    color: aliceblue;
+    margin: 0 auto;
+    padding: 0;
+    border-radius: 20px;
+    text-align: center;
+  }
+  .linkfoot {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .presentacion {
+    padding: 10px;
+  }
+  .barra-search {
+    flex-direction: column;
+  }
+  .grid {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: auto;
+  }
+  .card {
+    display: flex;
+    flex-direction: column;
+  }
+  .container .row .col-lg-12:first-of-type {
+    flex-direction: column;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

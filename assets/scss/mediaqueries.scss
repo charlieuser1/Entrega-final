@@ -1,7 +1,6 @@
 
 
-
-//****/
+/*
 @media (max-width:1200px) {
     .grid {
         display: grid;
@@ -17,7 +16,7 @@
 }
 
 @media (max-width:480px)
-/*Mobile*/
+/*Mobile
     {
     .fondoytexto {
         align-items: center;
@@ -42,6 +41,16 @@
     .barra-search {
         flex-direction: column;
     }
+/*****
+@media (max-width:1200px) {
+    .grid {
+        display: grid;
+        justify-content: center;
+        grid-template-columns: auto auto auto;
+    }
+}
+**/
+/**
 
     .grid {
         display: grid;
@@ -55,3 +64,4 @@
     }
 
 }
+    */

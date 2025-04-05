@@ -1,5 +1,69 @@
-@use"./mediaqueries.scss";
+
 @use"./home.scss";
 @use"./elementos.scss";
 @use"./general.scss";
 @use"./catalogo.scss";
+
+
+@media (max-width:1200px) {
+    .grid {
+        display: grid;
+        justify-content: center;
+        grid-template-columns: auto auto auto;
+    }
+}
+
+@media (max-width:835px) {
+    .grid {
+        grid-template-columns: auto auto;
+    }
+}
+
+@media (max-width:480px)
+
+    {
+    .fondoytexto {
+        align-items: center;
+        background-color: rgba(0, 0, 0, 0.582);
+        color: aliceblue;
+        margin: 0 auto;
+        padding: 0;
+        border-radius: 20px;
+        text-align: center;
+    }
+
+    .linkfoot {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .presentacion {
+        padding: 10px;
+    }
+
+    .barra-search {
+        flex-direction: column;
+    }
+
+    .grid {
+        display: grid;
+        justify-content: center;
+        grid-template-columns: auto;
+    }
+
+    .card {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container {
+        .row {
+            .col-lg-12 {
+                &:first-of-type {
+                    flex-direction: column;
+                }
+            }
+        }
+    }
+}
