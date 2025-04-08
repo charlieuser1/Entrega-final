@@ -6,6 +6,7 @@
         border-radius: 10px;
 
         .col-lg-12 {
+            width: 90%;
             .carousel-inner {
                 border-radius: 10px;
             }
@@ -135,19 +136,21 @@ main {
 
                 img {
                     border-radius: 10px;
-                    width: 100%;
+                    width: 50%;
                 }
             }
         }
     }
 }
-
-.container-fluid {
+.container-expand {
+    background-color: rgb(173, 173, 173);
+    padding: 5%;
+}
+.container-fluid-expand {
     .Total {
         padding: auto;
         background-color: aliceblue;
-        border-radius: 10px;
-        padding: 10px;
+        padding: 10px 15%;
 
         .Box-calculator {
             display: flex;

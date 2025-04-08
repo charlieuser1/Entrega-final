@@ -1,30 +1,34 @@
-.presentacion {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.container-background {
     background-image: url(../img/Fondo-historia.png);
     background-repeat: no-repeat;
     background-size: auto;
-    width: auto;
-    height: auto;
-    padding: 10%;
-    margin: 0px 0px 10px 0px;
-    font-size: 20px;
-
-    h2 {
-        font-size: 50px;
-        font-weight: bolder;
+    .presentacion {
+        background: radial-gradient(rgba(46, 46, 46, 0.425)60%, rgb(2, 2, 2));
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: auto;
+        height: auto;
+        padding: 10%;
+        margin: 0px;
+        font-size: 20px;
+        color: aliceblue;
+        text-align: center;
+        h3{
+            font-weight: bold;
+        }
+        h2 {
+            font-size: 50px;
+            font-weight: bolder;
+        }
     }
 
-    .fondoytexto {
+    .container-fondoytexto {
         align-items: center;
-        background-color: rgba(0, 0, 0, 0.582);
         color: aliceblue;
-        margin: 0 auto;
-        padding: 50px 50px;
-        border-radius: 20px;
+        margin: 0px auto;
+        padding: 0px;
         text-align: center;
-        gap: 30px;
     }
 
 }
@@ -32,19 +36,19 @@
 .ir-catalogo {
     display: inline-block;
     padding: 10px 100px;
-    border: 2px ridge #d3d3d3;
+    border: 2px ridge #cf8e008c;
     background-color: #323ee65d;
     color: #ffffff;
     text-decoration: none;
     font-size: 16px;
-    font-weight: 500;
+    font-weight: bold;
     border-radius: 5px;
 }
 
 .ir-catalogo:hover {
-    background-color: #323ee65d;
+    background-color: #323ee683;
     color: #fff;
-    border: 2px dotted #cacacaaf;
+    border: 2px dotted #bdba20af;
 }
 
 

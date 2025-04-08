@@ -22,25 +22,21 @@
 @media (max-width:480px)
 
     {
-    .fondoytexto {
-        align-items: center;
-        background-color: rgba(0, 0, 0, 0.582);
-        color: aliceblue;
-        margin: 0 auto;
-        padding: 0;
-        border-radius: 20px;
-        text-align: center;
-    }
 
     .linkfoot {
         display: flex;
         flex-direction: column;
         gap: 10px;
     }
-
+.container-background{
     .presentacion {
-        padding: 10px;
+        padding: 30% 10%;
+        font-size: 15px;
+        h2{
+            font-size: 20px;
+        }
     }
+}
 
     .barra-search {
         flex-direction: column;
