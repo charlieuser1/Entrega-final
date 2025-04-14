@@ -1,11 +1,13 @@
+
 body {
-    background: linear-gradient(to right, #550202ef, #db1515, #550202ef);
+    background: linear-gradient(to right, #550202ef, #db1515, #550202ef) no-repeat;
     font-family: "Poppins", serif;
     gap: auto;
 }
 
 main {
-    margin: 0 auto;
+    margin: 0px;
+    padding: 0px;
 }
 
 .nav-link {

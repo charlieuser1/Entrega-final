@@ -70,6 +70,7 @@
 .container .row {
   margin: 10px;
   border-radius: 10px;
+  justify-content: center;
 }
 .container .row .col-lg-12 {
   width: 90%;
@@ -218,13 +219,14 @@ main .container .row .c-card img {
 }
 
 body {
-  background: linear-gradient(to right, rgba(85, 2, 2, 0.937254902), #db1515, rgba(85, 2, 2, 0.937254902));
+  background: linear-gradient(to right, rgba(85, 2, 2, 0.937254902), #db1515, rgba(85, 2, 2, 0.937254902)) no-repeat;
   font-family: "Poppins", serif;
   gap: auto;
 }
 
 main {
-  margin: 0 auto;
+  margin: 0px;
+  padding: 0px;
 }
 
 .nav-link {
@@ -427,6 +429,10 @@ footer img {
   .container .row .col-lg-12:first-of-type {
     flex-direction: column;
   }
+}
+* {
+  margin: 0%;
+  padding: 0%;
 }
 
 /*# sourceMappingURL=style.css.map */
