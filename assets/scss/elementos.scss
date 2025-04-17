@@ -90,15 +90,16 @@ button {
     }
 }
 
-.P_name {
-    font-weight: bold;
-}
 
 main {
     .container {
         .row {
             padding: 10px;
             background-color: aliceblue;
+
+            .P_name {
+                font-weight: bold;
+            }
 
             .c-card {
                 /*para media query
