@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .container-background {
   background-image: url(../img/Fondo-historia.png);
   background-repeat: no-repeat;
@@ -80,7 +81,6 @@
 }
 .container .row .col-lg-12:first-of-type {
   border-radius: 10px;
-  background-color: aliceblue;
   padding: 5px;
   display: flex;
   flex-direction: row;
@@ -148,6 +148,7 @@ button {
 
 main .container .row {
   padding: 10px;
+  /***/
   background-color: aliceblue;
 }
 main .container .row .P_name {
@@ -282,6 +283,32 @@ footer .linkfoot {
   border-color: rgb(241, 255, 255);
 }
 
+.banner {
+  width: 100%;
+  background-color: #4542f4; /* Color amarillo para llamar la atención */
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+  text-align: center;
+}
+
+.banner-text {
+  display: inline-block;
+  animation: moverTexto 10s linear infinite;
+  font-size: 20px;
+  color: #ffffff; /* Texto en negro */
+  font-weight: bold;
+  text-shadow: black 1px 2px;
+}
+
+@keyframes moverTexto {
+  0% {
+    transform: translateX(250%);
+  }
+  100% {
+    transform: translateX(-250%);
+  }
+}
 /*Aqui empieza la confiuguracion exclusiva del catalogo*/
 .selector-cont {
   margin: 0 auto;
@@ -398,8 +425,15 @@ footer .linkfoot {
   }
 }
 @media (max-width: 480px) {
-  .linkfoot {
-    display: flex;
+  @keyframes moverTexto {
+    0% {
+      transform: translateX(50%);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+  footer .linkfoot {
     flex-direction: column;
     gap: 10px;
   }
@@ -425,10 +459,6 @@ footer .linkfoot {
   .container .row .col-lg-12:first-of-type {
     flex-direction: column;
   }
-}
-* {
-  margin: 0%;
-  padding: 0%;
 }
 
 /*# sourceMappingURL=style.css.map */

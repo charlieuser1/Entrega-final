@@ -14,7 +14,6 @@
 
             &:first-of-type {
                 border-radius: 10px;
-                background-color: aliceblue; //la primera columna (imagen)
                 padding: 5px;
                 display: flex;
                 flex-direction: row;
@@ -95,6 +94,7 @@ main {
     .container {
         .row {
             padding: 10px;
+            /***/
             background-color: aliceblue;
 
             .P_name {

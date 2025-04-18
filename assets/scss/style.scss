@@ -1,4 +1,3 @@
-
 @use"./home.scss";
 @use"./elementos.scss";
 @use"./general.scss";
@@ -19,24 +18,29 @@
     }
 }
 
-@media (max-width:480px)
+@media (max-width:480px) {
 
-    {
-
-    .linkfoot {
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
+    @keyframes moverTexto {
+        0% { transform: translateX(50%); }
+        100% { transform: translateX(-50%); }
     }
-.container-background{
-    .presentacion {
-        padding: 30% 10%;
-        font-size: 15px;
-        h2{
-            font-size: 20px;
+    footer {
+        .linkfoot {
+            flex-direction: column;
+            gap: 10px;
         }
     }
-}
+
+    .container-background {
+        .presentacion {
+            padding: 30% 10%;
+            font-size: 15px;
+
+            h2 {
+                font-size: 20px;
+            }
+        }
+    }
 
     .barra-search {
         flex-direction: column;
@@ -62,9 +66,4 @@
             }
         }
     }
-}
-
-*{
-    margin: 0%;
-    padding: 0%;
 }

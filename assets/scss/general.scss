@@ -66,3 +66,26 @@ footer {
     background-color: rgb(61, 129, 255);
     border-color: rgb(241, 255, 255);
 }
+
+.banner {
+    width: 100%;
+    background-color: #4542f4; /* Color amarillo para llamar la atención */
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+    text-align: center;
+}
+
+.banner-text {
+    display: inline-block;
+    animation: moverTexto 10s linear infinite;
+    font-size: 20px;
+    color: #ffffff; /* Texto en negro */
+    font-weight: bold;
+    text-shadow: black 1px 2px;
+}
+
+@keyframes moverTexto {
+    0% { transform: translateX(250%); }
+    100% { transform: translateX(-250%); }
+}
