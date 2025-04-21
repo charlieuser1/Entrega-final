@@ -16,6 +16,16 @@
     .grid {
         grid-template-columns: auto auto;
     }
+    main{
+        .container{
+            .cart{
+                display:none;
+            }
+        }
+    .c-mobile{
+        display: block;
+    }
+    }
 }
 
 @media (max-width:480px) {
@@ -66,14 +76,5 @@
             }
         }
     }
-    main{
-        .container{
-            .row{
-                display: none;
-            }
-        }
-    .c-mobile{
-        display: block;
-    }
-    }
+
 }

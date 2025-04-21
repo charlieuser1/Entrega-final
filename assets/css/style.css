@@ -67,7 +67,6 @@
   gap: 10px;
 }
 
-/*Card de prductoo*/
 .container .row {
   margin: 10px;
   border-radius: 10px;
@@ -148,16 +147,12 @@ button {
 
 main .container .row {
   padding: 10px;
-  /***/
   background-color: aliceblue;
 }
 main .container .row .P_name {
   font-weight: bold;
 }
 main .container .row .c-card {
-  /*para media query
-  display: flex;
-  flex-direction: column;*/
   display: grid;
   grid-template-columns: auto auto auto;
   column-gap: 10%;
@@ -464,6 +459,12 @@ footer .linkfoot {
   .grid {
     grid-template-columns: auto auto;
   }
+  main .container .cart {
+    display: none;
+  }
+  main .c-mobile {
+    display: block;
+  }
 }
 @media (max-width: 480px) {
   @keyframes moverTexto {
@@ -499,12 +500,6 @@ footer .linkfoot {
   }
   .container .row .col-lg-12:first-of-type {
     flex-direction: column;
-  }
-  main .container .row {
-    display: none;
-  }
-  main .c-mobile {
-    display: block;
   }
 }
 
