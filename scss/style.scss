@@ -66,4 +66,14 @@
             }
         }
     }
+    main{
+        .container{
+            .row{
+                display: none;
+            }
+        }
+    .c-mobile{
+        display: block;
+    }
+    }
 }

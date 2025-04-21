@@ -218,6 +218,47 @@ main .container .row .c-card img {
   background-color: rgb(3, 218, 3);
 }
 
+.c-mobile {
+  display: none;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 2%;
+  background-color: rgb(255, 255, 255);
+}
+.c-mobile img {
+  border-radius: 10px;
+}
+.c-mobile .p-mobile {
+  display: flex;
+  justify-content: space-between;
+}
+.c-mobile .ico {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: end;
+}
+.c-mobile .pp-mobile {
+  display: flex;
+  justify-content: space-evenly;
+}
+.c-mobile .pp-mobile h4 {
+  display: none;
+}
+.c-mobile .pp-mobile a {
+  background-color: rgb(14, 13, 13);
+  border-radius: 10px;
+  border: 2px solid gray;
+  padding: 5px 10px;
+}
+.c-mobile .pp-mobile a svg {
+  color: rgb(255, 255, 255);
+  width: 20px;
+}
+.c-mobile h5 {
+  font-weight: bold;
+}
+
 body {
   background: linear-gradient(to right, rgba(85, 2, 2, 0.937254902), #db1515, rgba(85, 2, 2, 0.937254902)) no-repeat;
   font-family: "Poppins", serif;
@@ -458,6 +499,12 @@ footer .linkfoot {
   }
   .container .row .col-lg-12:first-of-type {
     flex-direction: column;
+  }
+  main .container .row {
+    display: none;
+  }
+  main .c-mobile {
+    display: block;
   }
 }
 
